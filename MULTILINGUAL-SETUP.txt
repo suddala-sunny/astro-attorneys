@@ -1,0 +1,25 @@
+ASTRO ATTORNEYS — MULTILINGUAL WEBSITE
+
+A language selector has been added to the website header. Visitors can choose English, Tamil, Hindi, Kannada, Telugu, Malayalam and many additional languages. The widget translates the visible page in the visitor's browser and requires an internet connection.
+
+IMPORTANT FOR BUSINESS USE
+This is a commercial astrology consultancy website. GTranslate's free widget is subject to permitted-use conditions and is not intended for websites that directly generate revenue. Before public launch, create a GTranslate account, select a commercial plan that permits business use, and configure the website domain/languages as required by GTranslate. Do not assume the free plan is suitable for this business.
+
+Translation is machine-generated and may not correctly convey specialist Vedic astrology or Tamil Jothidam terminology. Have important service descriptions, prices, policies and client-facing legal/privacy text professionally reviewed in each language before relying on them.
+
+The translation widget loads from cdn.gtranslate.net and sends page text for translation through its translation service. Update the website privacy notice accordingly and review GTranslate and Google privacy terms. Avoid placing sensitive client data on public pages.
+
+To test: extract the website folder, open index.html while connected to the internet, and use the Language dropdown at the top right. For best reliability, test again after publishing to the actual domain and configuring the paid commercial plan.
+
+
+MULTILINGUAL FONT AND LAYOUT FIX (updated)
+- Fixed: the previous font request named "Noto Serif Arabic", which is not a Google Fonts family, so Arabic headings never loaded. The correct family "Noto Naskh Arabic" is now used, plus Noto families for Hebrew, Urdu (Nastaliq), Bengali, Gujarati and Thai.
+- Tamil, Hindi, Kannada and Telugu fonts (and the heading and body fonts) are now bundled in the fonts/ folder, so the five main languages display correctly even offline or when Google Fonts is blocked.
+- Letter-spacing and forced upper-case are switched off for scripts where they break letter joining (Indic, Thai, Arabic, Hebrew, CJK), and line-height is increased for tall marks.
+- Brand name, consultant name, phone, email and language names are marked do-not-translate so the translator cannot change them (e.g. "Attorneys" into the word for lawyers).
+- Right-to-left layout is switched on automatically when the page language becomes Arabic, Hebrew, Persian or Urdu.
+- The page now loads Noto Sans and Noto Serif font families for Tamil, Hindi/Devanagari, Kannada, Telugu, Malayalam, Arabic, Bengali, Gujarati, Thai, Chinese, Japanese and Korean, with safe system fallbacks.
+- Translated text is allowed to wrap and grow instead of clipping inside English-sized layouts.
+- RTL direction support is included for Arabic, Hebrew, Persian and Urdu when the translation service updates the document language.
+- Google Fonts and the translation service require an internet connection. If a font service is blocked, the browser uses installed system fallback fonts.
+- Machine translations should be reviewed by a fluent speaker before relying on astrology-specific terms, payment instructions or legal/privacy text.
