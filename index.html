@@ -308,8 +308,41 @@ html[dir="rtl"] .progress{transform-origin:100% 50%}
 
 .form ::placeholder{color:#9a96a3;opacity:1}
 
+/* ---- Consultation fee card ---- */
+.payment-card .feeline{font-size:15px;margin:8px 0 2px;color:var(--muted)}
+.payment-card .feeline b{color:var(--gold2);font-size:19px}
+
+.fee{position:relative;margin-top:34px;padding:34px 38px 30px;border:1px solid rgba(217,184,117,.75);background:radial-gradient(ellipse at 12% 0%,rgba(217,184,117,.16),transparent 50%),radial-gradient(ellipse at 100% 100%,rgba(90,70,150,.28),transparent 55%),linear-gradient(145deg,#1d2135,#0d111b);box-shadow:0 22px 60px rgba(0,0,0,.45),0 0 0 6px rgba(217,184,117,.05);overflow:hidden}
+.fee::before{content:"";position:absolute;inset:7px;border:1px solid rgba(217,184,117,.2);pointer-events:none}
+.fee::after{content:"";position:absolute;top:0;bottom:0;width:30%;left:-40%;background:linear-gradient(100deg,transparent,rgba(240,219,169,.12),transparent);transform:skewX(-18deg);animation:feeshine 7s ease-in-out infinite;pointer-events:none}
+@keyframes feeshine{0%,55%{left:-40%}100%{left:130%}}
+.feehead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.feehead .orn{margin:0;width:90px}
+.feenative{font-size:17px;color:var(--gold2);margin-inline-start:auto}
+.feenative span[lang="ta"]{font-family:'Noto Serif Tamil','Noto Sans Tamil',serif}
+.feenative span[lang="hi"]{font-family:'Noto Serif Devanagari','Noto Sans Devanagari',serif}
+.feemain{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px 44px;align-items:center}
+.feeamt{display:flex;flex-direction:column;align-items:center;text-align:center;padding:10px 40px 10px 6px;border-inline-end:1px solid var(--line)}
+.fee .amt{font:600 clamp(64px,8vw,92px)/1.05 'Cormorant Garamond','Noto Serif',serif;background:linear-gradient(100deg,#d9b875,#fff7df 45%,#d9b875);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 0 18px rgba(217,184,117,.35))}
+.fee .per{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.feetxt .lead{font:italic 600 27px/1.35 'Cormorant Garamond','Noto Serif','Noto Serif Tamil','Noto Serif Devanagari',serif;color:var(--gold2);margin:0 0 6px}
+.feetxt p{margin:0 0 8px;color:#d6cfc3;font-size:15.5px}
+.feetxt .fine2{color:var(--muted);font-size:13.5px}
+.feetxt .contact-actions{margin-top:16px}
+.perks{list-style:none;margin:26px 0 0;padding:22px 0 0;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.perks li{display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px;font-size:13.5px;line-height:1.5;color:#e6dfd3}
+.perks svg{width:34px;height:34px;padding:7px;color:var(--gold2);border:1px solid rgba(217,184,117,.5);border-radius:50%;background:rgba(217,184,117,.07);box-sizing:content-box;width:20px;height:20px}
+@media(max-width:1000px){.perks{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:800px){.fee{padding:26px 20px}.feemain{grid-template-columns:1fr;text-align:center;justify-items:center}.feeamt{padding:0 0 14px;border-inline-end:0;border-bottom:1px solid var(--line);width:100%}.feehead{justify-content:center}.feenative{margin-inline-start:0;width:100%;text-align:center}.feetxt .contact-actions{justify-content:center}.perks{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.perks{grid-template-columns:1fr}.perks li{flex-direction:row;text-align:start;gap:12px}.feetxt .contact-actions .pill{width:100%}}
+:is(:lang(ta),:lang(hi),:lang(kn),:lang(te),:lang(ml),:lang(bn),:lang(gu),:lang(ar),:lang(fa),:lang(ur),:lang(he)) .fee .per{letter-spacing:0;text-transform:none}
+@media(prefers-reduced-motion:reduce){.fee::after{animation:none;display:none}}
+
+.feenative span{white-space:nowrap}
+@media(max-width:800px){.feenative span[lang]{display:block}.feenative .dotsep{display:none}}
+
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Astro Attorneys","description":"Vedic astrology and Tamil Jothidam consultations with Abirami.","telephone":"+918754484704","knowsLanguage":["ta","en","hi","kn","te"],"areaServed":"Worldwide","founder":{"@type":"Person","name":"Abirami"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Astro Attorneys","description":"Vedic astrology and Tamil Jothidam consultations with Abirami.","telephone":"+918754484704","knowsLanguage":["ta","en","hi","kn","te"],"priceRange":"₹1300","areaServed":"Worldwide","founder":{"@type":"Person","name":"Abirami"}}</script>
 </head>
 <body>
 <div class="progress" id="progress" aria-hidden="true"></div><div class="stars" aria-hidden="true"></div><div class="petals" aria-hidden="true"><i class="petal" style="left:43%;--s:12px;--d:34s;--dl:-3s;--x:-51px"></i><i class="petal" style="left:70%;--s:11px;--d:33s;--dl:-37s;--x:-53px"></i><i class="petal" style="left:66%;--s:13px;--d:23s;--dl:-5s;--x:-5px"></i><i class="petal" style="left:55%;--s:11px;--d:29s;--dl:-5s;--x:10px"></i><i class="petal" style="left:56%;--s:10px;--d:40s;--dl:-7s;--x:-32px"></i><i class="petal" style="left:82%;--s:10px;--d:40s;--dl:-37s;--x:-10px"></i><i class="petal" style="left:8%;--s:13px;--d:23s;--dl:-35s;--x:49px"></i><i class="petal" style="left:19%;--s:14px;--d:35s;--dl:-9s;--x:9px"></i><i class="petal" style="left:17%;--s:14px;--d:39s;--dl:-11s;--x:-47px"></i></div><i class="shoot s1" aria-hidden="true"></i><i class="shoot s2" aria-hidden="true"></i>
@@ -368,7 +401,14 @@ html[dir="rtl"] .progress{transform-origin:100% 50%}
 <article class="card reveal"><div class="num">04 / Family <span class="ta notranslate" translate="no" lang="ta">குடும்பம்</span></div><h3>Family &amp; Relationships</h3><p>A private, considered conversation about family matters and relationship questions through an astrological lens.</p></article>
 <article class="card reveal"><div class="num">05 / Muhurtham <span class="ta notranslate" translate="no" lang="ta">முகூர்த்தம்</span></div><h3>Auspicious Timing</h3><p>Discuss traditional date and time selection for important occasions, subject to the details and tradition followed.</p></article>
 <article class="card reveal"><div class="num">06 / Guidance <span class="ta notranslate" translate="no" lang="ta">வழிகாட்டுதல்</span></div><h3>Personal Life Guidance</h3><p>Bring the questions that matter to you and receive a thoughtful interpretation grounded in astrological tradition.</p></article>
-</div></div></section>
+</div>
+<div class="fee reveal"><div class="feehead"><span class="orn" aria-hidden="true"><i></i></span><span class="eyebrow">Consultation fee</span><span class="feenative notranslate" translate="no"><span lang="ta">ஆலோசனைக் கட்டணம்</span><span class="dotsep"> · </span><span lang="hi">परामर्श शुल्क</span></span></div>
+<div class="feemain"><div class="feeamt"><div class="amt notranslate" translate="no">₹1,300</div><span class="per">per consultation · INR</span></div>
+<div class="feetxt"><p class="lead">One clear, honest fee, shown openly.</p><p>The session format, duration and available time are confirmed with you before you pay, so there are no surprises.</p><p class="fine2">Fee is in Indian Rupees. Payment is by Google Pay; the details are in the Contact section below.</p>
+<div class="contact-actions"><a class="pill" href="#contact">Book a Consultation</a><a class="pill ghost" href="https://wa.me/918754484704?text=Hello%20Abirami%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">Ask on WhatsApp</a></div></div></div>
+<ul class="perks"><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Private one-to-one session</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5h18v11H8l-5 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tamil · English · Hindi · Kannada · Telugu</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Phone, video, WhatsApp or in person</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6zM9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Confidential and respectful</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Guidance without fear-based promises</span></li></ul>
+</div>
+</div></section>
 
 <section class="section navagraha" id="navagraha"><div class="wrap">
 <div class="section-head reveal"><div class="eyebrow">Jyotish Vidya</div><h2>The nine Grahas, the language of the sky.</h2><p>In Vedic astrology, the nine Navagraha are read together with the twelve Rashis and the Nakshatras to understand a birth chart. These are the traditional themes associated with each Graha.</p></div>
@@ -406,8 +446,8 @@ html[dir="rtl"] .progress{transform-origin:100% 50%}
 <details class="reveal"><summary>Which languages are consultations available in?</summary><p>Tamil, English, Hindi, Kannada and Telugu. Tell us your preferred language when you enquire and we will confirm availability.</p></details>
 <details class="reveal"><summary>How are consultations held?</summary><p>By phone, video call or WhatsApp, or in person by appointment. Operations are currently online, based in Bengaluru, Karnataka. A physical office address will be announced soon.</p></details>
 <details class="reveal"><summary>What birth details will I need?</summary><p>For a chart reading you will usually need your date, time and place of birth. You will be told exactly what is needed, and why, after your enquiry. Please do not send sensitive birth details in the first message.</p></details>
-<details class="reveal"><summary>When will I know the fee and timing?</summary><p>The session format, duration, fee and available time are confirmed with you before you commit to an appointment.</p></details>
-<details class="reveal"><summary>How can I make a payment?</summary><p>Payment details are shared when your appointment is confirmed. Whenever you pay through Google Pay, please verify the recipient's name in the app before confirming any transfer.</p></details>
+<details class="reveal"><summary>What is the consultation fee?</summary><p>The consultation fee is <span class="notranslate" translate="no">₹1,300</span> per consultation, in Indian Rupees. The session format, duration and available time are confirmed with you before you commit to an appointment.</p></details>
+<details class="reveal"><summary>How can I make a payment?</summary><p>The fee is <span class="notranslate" translate="no">₹1,300</span>. Payment details are shared when your appointment is confirmed, and the Google Pay number is also shown in the Contact section. Whenever you pay through Google Pay, please verify the recipient's name in the app before confirming any transfer.</p></details>
 <details class="reveal"><summary>Can astrology guarantee an outcome?</summary><p>No. Astrology is a traditional, reflective practice. Consultations offer perspective for your own decisions; no outcome, prediction or remedy is guaranteed, and nothing here replaces qualified medical, mental-health, legal or financial advice.</p></details>
 <details class="reveal"><summary>Is my information kept private?</summary><p>Consultations are approached with care and confidentiality. This website does not store the enquiry form; sending it simply opens a WhatsApp message to Abirami that you can review before sending.</p></details>
 </div></section>
@@ -424,7 +464,7 @@ html[dir="rtl"] .progress{transform-origin:100% 50%}
 <div><b>Languages</b> · Tamil · English · Hindi · Kannada · Telugu</div>
 </div>
 <div class="contact-actions"><a class="pill" href="tel:+918754484704">Call Abirami</a><a class="pill ghost" href="https://wa.me/918754484704?text=Hello%20Abirami%2C%20I%20would%20like%20to%20enquire%20about%20an%20astrology%20consultation." target="_blank" rel="noopener">WhatsApp</a></div>
-<div class="payment-card"><strong>Google Pay (GPay)</strong><p class="pay-number notranslate" translate="no">+91 87544 84704</p><p>Use this mobile number in Google Pay to find Abirami and make a payment. Please verify the recipient's name in the app before confirming any transfer.</p></div>
+<div class="payment-card"><strong>Google Pay (GPay)</strong><p class="feeline">Consultation fee: <b class="notranslate" translate="no">₹1,300</b></p><p class="pay-number notranslate" translate="no">+91 87544 84704</p><p>Use this mobile number in Google Pay to find Abirami and make a payment. Please verify the recipient's name in the app before confirming any transfer.</p></div>
 </div>
 <form class="form" id="enquiry" autocomplete="on">
 <div><label for="name">Your name</label><input id="name" name="name" required autocomplete="name" placeholder="Enter your name"></div>

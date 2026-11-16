@@ -8,7 +8,10 @@
 
 ## Services and pricing
 - [ ] Confirm each service actually offered.
-- [ ] Set consultation duration and fees.
+- [x] Consultation fee: Rs 1,300 (INR) per consultation, now shown on the website.
+- [ ] Have a Tamil and Hindi speaker confirm the fee-card title: ஆலோசனைக் கட்டணம் / परामर्श शुल्क.
+- [ ] Set the consultation duration (minutes) and what the fee includes, then add them to the fee card and FAQ.
+- [ ] Ask a CA whether GST applies and whether the fee should be shown as inclusive or exclusive of tax.
 - [ ] Define report delivery, follow-up and remedy boundaries.
 - [ ] Define cancellation, rescheduling and refund rules.
 

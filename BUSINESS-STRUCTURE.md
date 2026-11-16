@@ -32,7 +32,9 @@ Start as a founder-led consultancy. Keep the first version simple and avoid buil
 
 These are proposed service categories, not confirmed offerings. Remove or amend any service Abirami does not personally practise.
 
-### Pricing architecture (do not publish prices until approved)
+### Pricing architecture
+Approved and published on the website: consultation fee Rs 1,300 (INR) per consultation. Session length and what is included are still to be defined and are described on the site as confirmed with the client before payment.
+
 Use a clear fee card with:
 - Introductory enquiry: free, limited to a short administrative conversation (not a free reading), if desired.
 - Standard consultation: fixed duration and fee.

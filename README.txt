@@ -34,6 +34,9 @@ ANIMATIONS AND INDIAN / JYOTISH MOTIFS
 - All motion is switched off automatically for visitors who set "reduce motion" on their device.
 - Please have a Tamil and Sanskrit speaker proofread the Rashi, Graha and mantra text before launch.
 
+CONSULTATION FEE
+- Rs 1,300 (INR) per consultation is shown in a premium fee card under Services (with Tamil/Hindi title, benefits row, Book and WhatsApp buttons), in the FAQ, and in the Google Pay box. To change it, search for the text "1,300" in index.html (and "1300" in the structured data near the top).
+
 HERITAGE GALLERY (new)
 - Section "An ancient Indian science of time and the sky": Rashi Chakra, Jyotisha manuscript, Olai Chuvadi (palm-leaf), and a brass deepam, each with an accurate caption, plus a native South Indian Rasi chart (Tamil and English labels, example placements only, no real person's data).
 - Images are original artistic illustrations supplied in "Indian Vedic astrology imagery.docx", shown as WebP in assets/heritage-*.webp. They are labelled "Artistic illustration" on the page and must not be described as antique objects.
